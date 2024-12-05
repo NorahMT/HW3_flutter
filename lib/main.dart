@@ -1,3 +1,4 @@
+import 'package:day4_flutter/pages/courses_page.dart';
 import 'package:day4_flutter/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) { //Dart= int,double,.... || Flutter= Widget (to see in run app) || context = سياق الصفحة
     return const MaterialApp(//بيت عظم stand
-      home: HomePage() //Scaffold: canvs to draw (pages), home: page to start from
+      home: CoursesPage() //Scaffold: canvs to draw (pages), home: page to start from
     );
   }
 }
