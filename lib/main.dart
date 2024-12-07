@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) { //Dart= int,double,.... || Flutter= Widget (to see in run app) || context = سياق الصفحة
     return const MaterialApp(//بيت عظم stand
-      home: CoursesPage() //Scaffold: canvs to draw (pages), home: page to start from
+      home: HomePage() //Scaffold: canvs to draw (pages), home: page to start from
     );
   }
 }

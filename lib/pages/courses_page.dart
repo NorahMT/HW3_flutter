@@ -9,41 +9,30 @@ class CoursesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 130, 68, 141),
-        title: const Text(" Introduction to flutter"),
+        title: const Text(" Course info "),
+        
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8),
-        child: Container(
+      body:
+      Container(
           height: 540,
           width: 300,
           color: Colors.blueGrey.shade100,
-          padding: const EdgeInsets.only(),
           child: Column(
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  const Icon(Icons.star_outline_outlined),
-                  const Text("Welcome to the course! ",
+                  Text("Welcome to the course! ",
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 10,
+                        fontSize: 15,
                       ),),
-                   ElevatedButton(onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const HomePage(),
-                        ));
-                  },
-                  child: const Text("Home"),
-                  )
+                        Icon(Icons.book),
                 ],
               )
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }
